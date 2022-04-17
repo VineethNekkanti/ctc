@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+  <div class="flex-card">
+    <%Posts.forEach(function(Post){%>
+      <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%=Post.companyName%></h5>
+        <h6><%=Post.industry%></h6>
+        <p class="card-text"><%=Post.culture.substring(0,100)+"..."%></p>
+        <a href="/our-ctc/<%=Post._id%>" class="btn btn-primary">Read More</a>
+      </div>
+      </div>
+    <%});%>
+  </div>
+
+<%- include('partials/footer') %>
