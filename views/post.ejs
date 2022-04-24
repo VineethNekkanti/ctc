@@ -1,23 +1,31 @@
 <%- include('partials/header') %>
 <div class="col d-flex justify-content-center">
   <div class="card" style="margin-top: 1rem; width: 90%;">
-    <div class="card-body">
+    <div class="card-body post-card">
       <h5 class="card-title"><%=Post.companyName%></h5>
-      <h6>Industry: <%=Post.industry%></h6>
-      <h6><%=Post.designation%></h6>
-      <h6><%=Post.education%></h6>
-      <h6><%=Post.yearOfJoining%></h6>
-      <h6><%=Post.experience%></h6>
-      <h6><%=Post.ctc%></h6>
-      <h6><%=Post.workingHours%></h6>
-      <h6><%=Post.perks%></h6>
+      <h6><span>Industry: </span><%=Post.industry%></h6>
+      <h6><span>Designation: </span><%=Post.designation%></h6>
+      <h6><span>Education: </span><%=Post.education%></h6>
+      <h6><span>Year of Joining: </span><%=Post.yearOfJoining%></h6>
+      <h6><span>Experience: </span><%=Post.experience%> years</h6>
+      <h6><span>Annual Package: </span><%=Post.ctc%> lpa</h6>
+      <h6><span>Working-Hours/day: </span><%=Post.workingHours%> hours</h6>
+      <h6><span>Perks: </span><%=Post.perks%></h6>
+      <p class="card-q">Tell us about your company's culture</p>
       <p class="card-text"><%=Post.culture%></p>
+      <p class="card-q">How is your connection with your co-workers?</p>
       <p class="card-text"><%=Post.friends%></p>
+      <p class="card-q">Do you feel valued for your contribution?</p>
       <p class="card-text"><%=Post.value%></p>
+      <p class="card-q">Do you feel your team is adequately staffed?</p>
       <p class="card-text"><%=Post.staffing%></p>
+      <p class="card-q">How is the work distribution in you team?</p>
       <p class="card-text"><%=Post.load%></p>
+      <p class="card-q">How are the opportunities for promotion?</p>
       <p class="card-text"><%=Post.promotion%></p>
+      <p class="card-q">How happy are you with this company?</p>
       <p class="card-text"><%=Post.happy%></p>
+      <p class="card-q">Do you have anything else to share?</p>
       <p class="card-text"><%=Post.misc%></p>
     </div>
   </div>
