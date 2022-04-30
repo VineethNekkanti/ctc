@@ -6,7 +6,10 @@
       <div class="card-body">
         <h5 class="card-title"><%=Post.companyName%></h5>
         <h6><%=Post.industry%></h6>
-        <p class="card-text"><%=Post.culture.substring(0,100)+"..."%></p>
+        <%let culture = Post.culture && Post.culture.substring(100)+"..."; %>
+        <p class="card-text">
+          <%culture%>
+        </p>
         <a href="/our-ctc/<%=Post._id%>" class="btn btn-primary">Read More</a>
       </div>
       </div>

@@ -40,8 +40,8 @@
       <form class="form-1" action="/" method="post">
         <div class="form-grid">
           <div class="col-1">
-            <input type="text" name="companyName" placeholder="Name of the Company">
-            <select name="industry">
+            <input type="text" name="companyName" placeholder="Name of the Company" required>
+            <select name="industry" required>
               <option>Select Industry</option>
               <option>Agriculture and Allied Industries</option>
               <option>Auto Components</option>
@@ -85,11 +85,11 @@
               <option>Textiles</option>
               <option>Tourism and Hospitality</option>
             </select>
-            <input type="text" name="designation" placeholder="Designation">
-            <input type="text" name="education" placeholder="Educational Qualification">
-            <input type="text" name="yearOfJoining" placeholder="Year of Joining" id="datepicker">
+            <input type="text" name="designation" placeholder="Designation" required>
+            <input type="text" name="education" placeholder="Educational Qualification" required>
+            <input type="text" name="yearOfJoining" placeholder="Year of Joining" id="datepicker" required>
             <input type="text" name="experience" placeholder="Experience">
-            <input type="text" name="ctc" placeholder="CTC (in lpa)">
+            <input type="text" name="ctc" placeholder="CTC (in lpa)" required>
             <div class="slider">
               <label for="myRange" class="form-label">I work for <span id="demo">5</span> hours/day</label>
               <input type="range" class="form-range" min="0" max="24" name="workingHours" id="myRange">
@@ -112,12 +112,12 @@
           </div>
 
           <div class=form-list>
-            <textarea name="culture" placeholder="Tell us about your company's culture" rows="3" cols="16"></textarea>
-            <textarea name="friends" placeholder="How is your connection with your co-workers?" rows="3" cols="16"></textarea>
-            <textarea name="value" placeholder="Do you feel valued for your contribution?" rows="3" cols="16"></textarea>
-            <textarea name="staffing" placeholder="Do you feel your team is adequately staffed?" rows="3" cols="16"></textarea>
-            <textarea name="load" placeholder="How is the work distribution in you team?" rows="3" cols="16"></textarea>
-            <textarea name="promotion" placeholder="How are the opportunities for promotion?" rows="3" cols="16"></textarea>
+            <textarea name="culture" placeholder="Tell us about your company's culture" rows="3" cols="16" required></textarea>
+            <textarea name="friends" placeholder="How is your connection with your co-workers?" rows="3" cols="16" required></textarea>
+            <textarea name="value" placeholder="Do you feel valued for your contribution?" rows="3" cols="16" required></textarea>
+            <textarea name="staffing" placeholder="Do you feel your team is adequately staffed?" rows="3" cols="16" required></textarea>
+            <textarea name="load" placeholder="How is the work distribution in you team?" rows="3" cols="16" required></textarea>
+            <textarea name="promotion" placeholder="How are the opportunities for promotion?" rows="3" cols="16" required></textarea>
             <textarea name="happy" placeholder="How happy are you with this company?" rows="3" cols="16"></textarea>
             <textarea name="misc" placeholder="Do you have anything else to share?"rows="3" cols="16"></textarea>
           </div>

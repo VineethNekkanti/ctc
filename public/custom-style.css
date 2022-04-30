@@ -63,10 +63,6 @@ body{
 		transform: translateX(0%);
 	}
 
-	.nav-list[data-visible = "false"]{
-		transform: translateX(100%);
-	}
-
 	.nav-mobile-toggle{
 		display: block;
 		position: absolute;
@@ -76,18 +72,13 @@ body{
 		top: 2rem;
 		right: 2rem;
 		z-index: 9999;
+		background: url(/images/menu.svg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
 	}
 
 	.nav-mobile-toggle[aria-expanded = "true"]{
 		background: url(/images/cross.svg);
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-	}
-
-	.nav-mobile-toggle[aria-expanded = "false"]{
-		background: url(/images/menu.svg);
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
 	}
 
 	.form-grid{
